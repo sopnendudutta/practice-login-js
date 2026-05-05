@@ -65,6 +65,25 @@ h2 {
     background-color: #200ac5;
 }
 
+/* Add this to your existing .login-card class or as a new rule */
+.login-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition for hover */
+}
+
+.login-card:hover {
+    transform: translateY(-5px);
+    /* Lifts the card slightly */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    /* Deepens the shadow on hover */
+}
+
+/* Button click effect */
+.login-btn:active {
+    transform: scale(0.98);
+    /* Slightly shrinks the button when clicked[cite: 3] */
+}
+
 #message {
     margin-top: 1rem;
     text-align: center;
