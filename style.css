@@ -122,3 +122,13 @@ h2 {
     text-align: center;
     font-size: 0.9rem;
 }
+
+.message-success {
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+.message-error {
+    color: #e74c3c;
+    font-weight: bold;
+}
