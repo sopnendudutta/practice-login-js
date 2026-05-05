@@ -46,7 +46,37 @@ h2 {
 }
 
 .input-group input:focus {
-    border-color: #1c38b4;
+    border-color: #980361;
+    /* Matches your background gradient[cite: 3] */
+    background-color: #f9f9f9;
+    /* Subtle change to indicate active state[cite: 3] */
+    box-shadow: 0 0 5px rgba(152, 3, 97, 0.2);
+    /* Soft glow effect[cite: 3] */
+}
+
+/* Shake animation for invalid login attempts[cite: 3] */
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    75% {
+        transform: translateX(-10px);
+    }
 }
 
 .login-btn {
