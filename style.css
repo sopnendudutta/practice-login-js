@@ -97,8 +97,11 @@ h2 {
 
 /* Add this to your existing .login-card class or as a new rule */
 .login-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* Smooth transition for hover */
+    background: rgba(255, 255, 255, 0.85);
+    /* Semi-transparent[cite: 3] */
+    backdrop-filter: blur(10px);
+    /* Blurs the background behind the card[cite: 3] */
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .login-card:hover {
